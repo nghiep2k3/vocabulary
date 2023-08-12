@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/009/399/398/original/old-vintage-book-clipart-design-illustration-free-png.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <title>Từ vựng</title> 
+</head>
+
+<body>
+    <div id="container">
+        <div id="header" class="d-flex justify-content-center">
+            <div class="Add">
+                <button type="button" class="me-2 btn btn-primary ">Thêm từ</button>
+            </div>
+            <div class="Do_Quiz">
+                <button type="button" class="btn btn-danger">Làm quizz</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="container_Quizz" class="">
+        <div class="content">
+            <div class="content_header d-flex justify-content-between align-items-center">
+                <div>
+                    Câu số 1
+                </div>
+
+                <span class="material-icons close close_Quiz">
+                    close
+                </span>
+            </div>
+
+            <div class="word text-center fs-3">Nghĩa của từ: Hello</div>
+
+            <div class="answers">
+                <div class="div1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="A">
+                        <label class="form-check-label" for="A">
+                            A
+                        </label>
+                    </div>
+                </div>
+
+                <div class="div2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="B">
+                        <label class="form-check-label" for="B">
+                            B
+                        </label>
+
+
+                    </div>
+                </div>
+
+                <div class="div3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="C">
+                        <label class="form-check-label" for="C">
+                            C
+                        </label>
+                    </div>
+                </div>
+
+                <div class="div4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="D">
+                        <label class="form-check-label" for="D">
+                            D
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="container_Add">
+        <div class="content_Add">
+            <div class="content_Add_header d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="pb-2">
+                        <span style="padding-right: 20px; color: red; font-size: 18px;"> English: </span>
+                        <input type="text" name="Add_word">
+                    </div>
+
+                    <div>
+                        <span style="color: rgb(39, 57, 250);; font-size: 18px;">Tiếng việt: </span>
+                        <input type="text" name="Add_word">
+                    </div>
+                </div>
+
+                <button class="button_Add btn" style="background-color: aquamarine;">Thêm</button>
+                <span class="material-icons close close_Add">
+                    close
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="/logic.js"></script>
+</body>
+
+</html>

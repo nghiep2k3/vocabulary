@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    height: 100vh;
+}
+
+
+#container_Add {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#container_Quizz {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+.content {
+    box-shadow: 0px 0px 400px 46px rgba(192, 192, 192, 1);
+    -webkit-box-shadow: 0px 0px 400px 46px rgba(192, 192, 192, 1);
+    -moz-box-shadow: 0px 0px 400px 46px rgba(192, 192, 192, 1);
+    overflow: hidden;
+    background-color: white;
+    height: 400px;
+    width: 600px;
+    padding: 0 12px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.content_Add {
+    box-shadow: 0px 0px 400px 46px rgba(192, 192, 192, 1);
+    -webkit-box-shadow: 0px 0px 400px 46px rgba(192, 192, 192, 1);
+    -moz-box-shadow: 0px 0px 400px 46px rgba(192, 192, 192, 1);
+    padding: 6px 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+    width: 500px;
+    margin: 0 10px;
+}
+
+.content_Add_header {
+    height: max-content;
+
+}
+
+.content_header {
+    border-bottom: 2px solid black;
+    height: 30px;
+}
+
+.word {
+    /* border: 2px solid black; */
+    /* width: max-content; */
+}
+
+.close {
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 999px;
+}
+
+.answers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div4 {
+    grid-area: 2 / 2 / 3 / 3;
+}
